@@ -57,9 +57,28 @@ public class test {
 //        System.out.println(sum);
 
 
+//        String name = " y            Syed Anas Ahmed         ! " ;
+//        System.out.println(name.trim());
 
+//        Scanner input = new Scanner("101  25.0  2006");
+//        int code = input.nextInt();
+//        double salestax = input.nextDouble();
+//        long year = input.nextLong();
+//
+//        System.out.println(code);
+//        System.out.println(year);
+//        System.out.println(salestax);
 
+/*
+        String newvar = new String(  "Anas Ahmed") ;
+        newvar = "Syed Anas Ahmed";
+        System.out.println(newvar);*/
 
+        System.out.println("Enter a sentence");
+        Scanner sc = new Scanner(System.in);
+        String userinput = sc.nextLine();
+
+        System.out.println(userinput);
 
 
 
