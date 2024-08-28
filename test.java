@@ -112,10 +112,78 @@ public class test {
 //        String name = "Syed Anas Ahmed";
 //        int index1 = name.indexOf(" ");
 
-        char why = 'z';
-        String nowhy = "z";
+//        char why = 'z';
+//        String nowhy = "z";
+//
+//        System.out.println(nowhy.equals(why));
 
-        System.out.println(nowhy.equals(why));
+        //printing an acronym problem//
+
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter a line.");
+//        String input = sc.nextLine();
+//
+//        StringBuilder acronym  =  new StringBuilder();
+//
+//        if (input.length() > 0 ){
+//            acronym.append(input.charAt(0));
+////            System.out.println("aya");/
+//        }
+//
+//        int i = 1;
+//        while (i < input.length()){
+//            if (input.charAt(i) == ' ' && i+1<input.length()){
+//                acronym.append(input.charAt(i+1));
+//            }
+//            i++;
+//        }
+//
+//        System.out.println(acronym.toString().toUpperCase());
+
+
+        //Pallindrome
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a word/numbers");
+        String user_input = sc.nextLine();
+        String pallindrome = "";
+
+        for (int i = user_input.length() -1 ; i >= 0 ; i--){
+            pallindrome += user_input.charAt(i);
+        }
+
+        if (pallindrome.equals(user_input)){
+            System.out.println("The given string is a pallindrome");
+        }
+        else {
+            System.out.println("The given string is not a pallindrome");
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
