@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class test {
@@ -74,14 +75,47 @@ public class test {
         newvar = "Syed Anas Ahmed";
         System.out.println(newvar);*/
 
-        System.out.println("Enter a sentence");
-        Scanner sc = new Scanner(System.in);
-        String userinput = sc.nextLine();
+//        System.out.println("Enter a sentence");
+//        Scanner sc = new Scanner(System.in);
+//        String userinput = sc.nextLine();
+//
+//        System.out.println(userinput);
 
-        System.out.println(userinput);
+
+        //Creating object of a primitive data type.
+//        Integer autobox = 12;
+//        System.out.println(autobox);
+//
+//        int autounbox = autobox;
+//        System.out.println(autounbox);
 
 
+//        Integer tester  = 15;
+//        int newtest = tester;
+//        newtest = 18;
+//
+//        System.out.println(tester + "   " + newtest);
 
+
+//        String name = "Anas";
+//        String noname = "Anas" ;
+//        boolean check = name.equals(noname);
+//
+//        System.out.println(check);
+//        if (name == noname){
+//            System.out.println("barabar");
+//        }
+//        else{
+//            System.out.println("do barabar");
+//        }
+
+//        String name = "Syed Anas Ahmed";
+//        int index1 = name.indexOf(" ");
+
+        char why = 'z';
+        String nowhy = "z";
+
+        System.out.println(nowhy.equals(why));
 
 
 
