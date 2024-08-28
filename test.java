@@ -1,4 +1,3 @@
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class test {
@@ -142,21 +141,50 @@ public class test {
 
 
         //Pallindrome
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter a word/numbers");
+//        String user_input = sc.nextLine();
+//        String pallindrome = "";
+//
+//        for (int i = user_input.length() -1 ; i >= 0 ; i--){
+//            pallindrome += user_input.charAt(i);
+//        }
+//
+//        if (pallindrome.equals(user_input)){
+//            System.out.println("The given string is a pallindrome");
+//        }
+//        else {
+//            System.out.println("The given string is not a pallindrome");
+//        }
+
+
+        //factorial:
+
+        System.out.println("Enter a number to print it's factorial!");
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a word/numbers");
-        String user_input = sc.nextLine();
-        String pallindrome = "";
+        int user_input = sc.nextInt();
+        int factorial = 1;
 
-        for (int i = user_input.length() -1 ; i >= 0 ; i--){
-            pallindrome += user_input.charAt(i);
+        for(int i = 1; i<= user_input ; i++) {
+            factorial *= i;
         }
 
-        if (pallindrome.equals(user_input)){
-            System.out.println("The given string is a pallindrome");
-        }
-        else {
-            System.out.println("The given string is not a pallindrome");
-        }
+        System.out.println(factorial);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
