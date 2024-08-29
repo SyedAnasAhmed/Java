@@ -174,98 +174,86 @@ public class test {
 
         //multi dimensional array:
 
-        int [][] weeklydata = {
-                {10,23,31,54,53,24,42},
-                {37,85,55,34,23,65,34},
-                {24,42,75,67,43,102,57}
-        };
+        int[][] weeklydata = {{10, 23, 31, 54, 53, 24, 42}, {37, 85, 55, 34, 23, 65, 34}, {24, 42, 75, 67, 43, 102, 57}};
 
-//        for(int phoneIndex  = 0; phoneIndex < weeklydata.length; phoneIndex++ ){
+//        for (int phoneIndex = 0; phoneIndex < weeklydata.length; phoneIndex++) {
 //            System.out.print("Phone Index: " + phoneIndex + ":");
 //
-//            for (int dayindex = 0; dayindex < weeklydata[phoneIndex].length; dayindex++){
-//                System.out.printf( "%4d" , weeklydata[phoneIndex][dayindex]);
+//            for (int dayindex = 0; dayindex < weeklydata[phoneIndex].length; dayindex++) {
+//                System.out.printf("%4d", weeklydata[phoneIndex][dayindex]);
 //            }
 //            System.out.println();
 //        }
 
 //        int sum = 0;
-//        for (int i = 0; i<weeklydata[2].length; i++){
+//        for (int i = 0; i < weeklydata[2].length; i++) {
 //            sum += weeklydata[2][i];
 //        }
 //        System.out.println(sum);
 
-
+//
 //        int sum = 0;
-//        for (int i=0; i<weeklydata.length; i++){
+//        for (int i = 0; i < weeklydata.length; i++) {
 //            sum += weeklydata[i][2];
 //        }
 //
 //        System.out.println(sum);
 
-        int sum = 0;
-        for (int i = 0; i< weeklydata.length; i++){
-            for (int j = 0; j<weeklydata[i].length; j++){
-                if (weeklydata[i][j] > 100){
-                    System.out.println("The mobile phone " + i + " has messages greater than 100 on day " + j);
-                }
-            }
+//        int sum = 0;
+//        for (int i = 0; i < weeklydata.length; i++) {
+//            for (int j = 0; j < weeklydata[i].length; j++) {
+//                if (weeklydata[i][j] > 100) {
+//                    System.out.println("The mobile phone " + i + " has messages greater than 100 on day " + j);
+//                }
+//            }
+//        }
+
+//        int[] numbers = {3, 9, 5, -5};
+//        for (int i : numbers) {
+//            System.out.println(i);
+//        }
+
+
+        // Partially filled arrays:
+
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter a set of words to make a sentence and enter 'EOL' as a termination statement");
+//        String [] sentence = new String[50];
+//
+//        int wordindex = -1;
+//        String word = sc.next();
+//
+//        for(int i =0 ; i < sentence.length; i++){
+//            if ( !word.equals("EOL")){
+//                sentence[i]  = word;
+//                wordindex++;
+//                word = sc.next();
+//            }
+//        }
+//        int wordcount = wordindex + 1;
+//        System.out.println(wordcount);
+//
+//        for (int i = 0; i <wordcount ; i++ ){
+//            System.out.print(sentence[i] + "  ");
+//        }
+
+                    //Digit Frequency Problem//
+
+        int[] digitFrequency = new int[10];
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter positive integers, enter a negative integer to terminate.");
+        int input = sc.nextInt();
+
+        while (input >= 0 && input < 10) {
+            digitFrequency[input]++;
+            input = sc.nextInt();
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        for (int i = 0; i < digitFrequency.length; i++) {
+            if (digitFrequency[i] > 0) {
+                System.out.println(i + " occurs " + digitFrequency[i] + " times.");
+            }
+        }
 
     }
 }
