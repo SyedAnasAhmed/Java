@@ -174,7 +174,7 @@ public class test {
 
         //multi dimensional array:
 
-        int[][] weeklydata = {{10, 23, 31, 54, 53, 24, 42}, {37, 85, 55, 34, 23, 65, 34}, {24, 42, 75, 67, 43, 102, 57}};
+//        int[][] weeklydata = {{10, 23, 31, 54, 53, 24, 42}, {37, 85, 55, 34, 23, 65, 34}, {24, 42, 75, 67, 43, 102, 57}};
 
 //        for (int phoneIndex = 0; phoneIndex < weeklydata.length; phoneIndex++) {
 //            System.out.print("Phone Index: " + phoneIndex + ":");
@@ -238,22 +238,31 @@ public class test {
 //        }
 
                     //Digit Frequency Problem//
+//
+//        int[] digitFrequency = new int[10];
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter positive integers, enter a negative integer to terminate.");
+//        int input = sc.nextInt();
+//
+//        while (input >= 0 && input < 10) {
+//            digitFrequency[input]++;
+//            input = sc.nextInt();
+//        }
+//
+//        for (int i = 0; i < digitFrequency.length; i++) {
+//            if (digitFrequency[i] > 0) {
+//                System.out.println(i + " occurs " + digitFrequency[i] + " times.");
+//            }
+//        }
 
-        int[] digitFrequency = new int[10];
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter positive integers, enter a negative integer to terminate.");
-        int input = sc.nextInt();
 
-        while (input >= 0 && input < 10) {
-            digitFrequency[input]++;
-            input = sc.nextInt();
-        }
 
-        for (int i = 0; i < digitFrequency.length; i++) {
-            if (digitFrequency[i] > 0) {
-                System.out.println(i + " occurs " + digitFrequency[i] + " times.");
-            }
-        }
+
+
+
+
+
+
 
     }
 }
