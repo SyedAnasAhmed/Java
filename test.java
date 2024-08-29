@@ -237,7 +237,7 @@ public class test {
 //            System.out.print(sentence[i] + "  ");
 //        }
 
-                    //Digit Frequency Problem//
+        //Digit Frequency Problem//
 //
 //        int[] digitFrequency = new int[10];
 //        Scanner sc = new Scanner(System.in);
@@ -254,6 +254,96 @@ public class test {
 //                System.out.println(i + " occurs " + digitFrequency[i] + " times.");
 //            }
 //        }
+
+//              Extended version of above problem:
+
+//        int[] digitFrequency = new int[10];
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter positive integers, enter a negative integer to terminate.");
+//        int input = sc.nextInt();
+//
+//        while (input >= 0 && input < 10) {
+//            digitFrequency[input]++;
+//            input = sc.nextInt();
+//        }
+//
+//        for (int i = 0; i < digitFrequency.length; i++) {
+//            System.out.print(i + ":");
+//            if (digitFrequency[i] > 0) {
+//                for (int j = 0; j <= digitFrequency[i]; j++) {
+//                    System.out.print("*");
+//                }
+//            }
+//            System.out.println();
+//        }
+
+        //  chap 6 Ques 4:
+
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter 10 integers");
+//        int[] userinput = new int[10];
+//
+//        for (int i = 0; i < userinput.length; i++) {
+//            userinput[i] = sc.nextInt();
+//        }
+//        System.out.println("10 integers completed");
+//
+//        for (int i = 0; i < userinput.length; i++) {
+//            System.out.print(userinput[i] + ",");
+//        }
+//        System.out.println();
+//
+//        int smallestNumber = userinput[0];
+//        int smallestIndex = 0;
+//
+//        for (int i = 0; i < userinput.length; i++) {
+//            if (userinput[i] < smallestNumber) {
+//                smallestNumber = userinput[i];
+//                smallestIndex = i;
+//            }
+//        }
+//
+//        int temp = userinput[0];
+//        userinput[0] = userinput[smallestIndex];
+//        userinput[smallestIndex] = temp;
+//        System.out.println("The smallest number is : " + smallestNumber);
+//
+//        System.out.print("this is the revised array");
+//        for (int i = 0; i < userinput.length; i++) {
+//            System.out.print(userinput[i] + ",");
+//        }
+
+                // Taking a multi-dimensional array from userinput and then displaying it.
+
+//        int rows = 3;
+//        int cols = 7;
+//
+//        int[][] weeklydataarr =  new int[rows][cols];
+//        Scanner sc= new Scanner(System.in);
+//        System.out.println("Enter the weekly data of bla bla");
+//
+//        for (int i=0; i<rows; i++){
+//            for (int j=0; j<cols; j++){
+//                weeklydataarr[i][j] = sc.nextInt();
+//            }
+//        }
+//        System.out.println("The prompt has completed");
+//
+//        for (int i=0; i<rows; i++){
+//            for (int j=0; j<cols; j++){
+//                System.out.print(weeklydataarr[i][j] + " ");
+//            }
+//            System.out.println();
+//        }
+
+
+
+
+
+
+
+
+
 
 
 
