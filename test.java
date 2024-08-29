@@ -159,17 +159,69 @@ public class test {
 
 
         //factorial:
+//
+//        System.out.println("Enter a number to print it's factorial!");
+//        Scanner sc = new Scanner(System.in);
+//        int user_input = sc.nextInt();
+//        int factorial = 1;
+//
+//        for(int i = 1; i<= user_input ; i++) {
+//            factorial *= i;
+//        }
+//
+//        System.out.println(factorial);
 
-        System.out.println("Enter a number to print it's factorial!");
-        Scanner sc = new Scanner(System.in);
-        int user_input = sc.nextInt();
-        int factorial = 1;
 
-        for(int i = 1; i<= user_input ; i++) {
-            factorial *= i;
+        //multi dimensional array:
+
+        int [][] weeklydata = {
+                {10,23,31,54,53,24,42},
+                {37,85,55,34,23,65,34},
+                {24,42,75,67,43,102,57}
+        };
+
+//        for(int phoneIndex  = 0; phoneIndex < weeklydata.length; phoneIndex++ ){
+//            System.out.print("Phone Index: " + phoneIndex + ":");
+//
+//            for (int dayindex = 0; dayindex < weeklydata[phoneIndex].length; dayindex++){
+//                System.out.printf( "%4d" , weeklydata[phoneIndex][dayindex]);
+//            }
+//            System.out.println();
+//        }
+
+//        int sum = 0;
+//        for (int i = 0; i<weeklydata[2].length; i++){
+//            sum += weeklydata[2][i];
+//        }
+//        System.out.println(sum);
+
+
+//        int sum = 0;
+//        for (int i=0; i<weeklydata.length; i++){
+//            sum += weeklydata[i][2];
+//        }
+//
+//        System.out.println(sum);
+
+        int sum = 0;
+        for (int i = 0; i< weeklydata.length; i++){
+            for (int j = 0; j<weeklydata[i].length; j++){
+                if (weeklydata[i][j] > 100){
+                    System.out.println("The mobile phone " + i + " has messages greater than 100 on day " + j);
+                }
+            }
         }
 
-        System.out.println(factorial);
+
+
+
+
+
+
+
+
+
+
 
 
 
