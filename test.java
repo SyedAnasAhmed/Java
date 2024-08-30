@@ -313,7 +313,7 @@ public class test {
 //            System.out.print(userinput[i] + ",");
 //        }
 
-                // Taking a multi-dimensional array from userinput and then displaying it.
+        // Taking a multi-dimensional array from userinput and then displaying it.
 
 //        int rows = 3;
 //        int cols = 7;
@@ -336,23 +336,24 @@ public class test {
 //            System.out.println();
 //        }
 
+        String[] firstNameArray = createStringArray();
+        printAnArray(firstNameArray);
+    }
 
+    static String[] createStringArray() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("How many names do you want to enter?");
+        int arrIndex = sc.nextInt();
+        String[] arr = new String[arrIndex];
+        for (int i = 0; i < arrIndex; i++) {
+            arr[i] = sc.next();
+        }
+        return arr;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    static void printAnArray(String[] arr){
+        for (int i=0; i<arr.length ; i++){
+            System.out.print(arr[i] + ", ");
+        }
     }
 }
