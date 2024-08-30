@@ -336,24 +336,37 @@ public class test {
 //            System.out.println();
 //        }
 
-        String[] firstNameArray = createStringArray();
-        printAnArray(firstNameArray);
+//        String[] firstNameArray = createStringArray();
+//        printAnArray(firstNameArray);
+
+
+        enum Weekday { MONDAY , TUESDAY , WEDNESDAY, THURSDAY, FRIDAY, SATURDAY };
+//        System.out.println(Weekday.SATURDAY.toString());
+//        Weekday bestday = Weekday.FRIDAY;
+//        System.out.println(bestday.toString());
+//        System.out.println(bestday);
+
+        Weekday [] weekarray = Weekday.values();
+        for (Weekday index : weekarray) {
+            System.out.print(index + " ");
+        }
+
     }
 
-    static String[] createStringArray() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("How many names do you want to enter?");
-        int arrIndex = sc.nextInt();
-        String[] arr = new String[arrIndex];
-        for (int i = 0; i < arrIndex; i++) {
-            arr[i] = sc.next();
-        }
-        return arr;
-    }
-
-    static void printAnArray(String[] arr){
-        for (int i=0; i<arr.length ; i++){
-            System.out.print(arr[i] + ", ");
-        }
-    }
+//    static String[] createStringArray() {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("How many names do you want to enter?");
+//        int arrIndex = sc.nextInt();
+//        String[] arr = new String[arrIndex];
+//        for (int i = 0; i < arrIndex; i++) {
+//            arr[i] = sc.next();
+//        }
+//        return arr;
+//    }
+//
+//    static void printAnArray(String[] arr){
+//        for (int i=0; i<arr.length ; i++){
+//            System.out.print(arr[i] + ", ");
+//        }
+//    }
 }
