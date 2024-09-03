@@ -404,5 +404,6 @@ class forex {
         System.out.println(newObj.fromCurrency);
         convertToTarget(45);
         convertToBase(50000);
+        newObj.convertToBase(50000);
     }
 }
