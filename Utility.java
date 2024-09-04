@@ -2,9 +2,10 @@ public class Utility {
 
     public static void main(String[] args) {
 
-        int[] newarray = {10, 15, 2, 9, 31, 6, 8, 20, 12, 19};
+        int[] newarray = {81,10,21,61,1,3,19,28,50};
         printArray("The array before sorting: ", newarray);
-        selectionSort(newarray);
+//        selectionSort(newarray);
+        insertionSort(newarray);
         printArray("The array after sorting: ", newarray);
 
     }
@@ -33,6 +34,18 @@ public class Utility {
         System.out.println();
     }
 
+    static void insertionSort(int[] numbers) {
+        for (int i = 1; i < numbers.length; i++) {  // i=1 ,2
+            int temp = numbers[i];   //temp=10
+            int j;
+            for (j = i-1; j >= 0 && temp < numbers[j] ; j--) {  // j=0 ,1
+                numbers[j+1] = numbers[j];
+            }
+            assert j == -1 || numbers[j] < temp;
+            numbers[j+1] = temp;      //temp =10
+            printArray("Pass" + (i) + ": ", numbers);
+        }
+    }
 
 
 }
