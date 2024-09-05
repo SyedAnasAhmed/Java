@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class test {
-//    public static void main(String[] args) {
+    public static void main(String[] args) {
 
-    //3.6 Q1
+        //3.6 Q1
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("Enter the number of seconds");
 //        int user_input  = sc.nextInt();
@@ -20,7 +20,7 @@ public class test {
 //
 //        }
 
-    //3.6 Q2:
+        //3.6 Q2:
 
 //        Scanner sc = new Scanner(System.in);
 //        System.out.print("Enter a lower limit for the interval :  ");
@@ -81,7 +81,7 @@ public class test {
 //        System.out.println(userinput);
 
 
-    //Creating object of a primitive data type.
+        //Creating object of a primitive data type.
 //        Integer autobox = 12;
 //        System.out.println(autobox);
 //
@@ -116,7 +116,7 @@ public class test {
 //
 //        System.out.println(nowhy.equals(why));
 
-    //printing an acronym problem//
+        //printing an acronym problem//
 
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("Enter a line.");
@@ -140,7 +140,7 @@ public class test {
 //        System.out.println(acronym.toString().toUpperCase());
 
 
-    //Pallindrome
+        //Pallindrome
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("Enter a word/numbers");
 //        String user_input = sc.nextLine();
@@ -158,7 +158,7 @@ public class test {
 //        }
 
 
-    //factorial:
+        //factorial:
 //
 //        System.out.println("Enter a number to print it's factorial!");
 //        Scanner sc = new Scanner(System.in);
@@ -172,7 +172,7 @@ public class test {
 //        System.out.println(factorial);
 
 
-    //multi dimensional array:
+        //multi dimensional array:
 
 //        int[][] weeklydata = {{10, 23, 31, 54, 53, 24, 42}, {37, 85, 55, 34, 23, 65, 34}, {24, 42, 75, 67, 43, 102, 57}};
 
@@ -214,7 +214,7 @@ public class test {
 //        }
 
 
-    // Partially filled arrays:
+        // Partially filled arrays:
 
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("Enter a set of words to make a sentence and enter 'EOL' as a termination statement");
@@ -237,7 +237,7 @@ public class test {
 //            System.out.print(sentence[i] + "  ");
 //        }
 
-    //Digit Frequency Problem//
+        //Digit Frequency Problem//
 //
 //        int[] digitFrequency = new int[10];
 //        Scanner sc = new Scanner(System.in);
@@ -277,7 +277,7 @@ public class test {
 //            System.out.println();
 //        }
 
-    //  chap 6 Ques 4:
+        //  chap 6 Ques 4:
 
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("Enter 10 integers");
@@ -313,7 +313,7 @@ public class test {
 //            System.out.print(userinput[i] + ",");
 //        }
 
-    // Taking a multi-dimensional array from userinput and then displaying it.
+        // Taking a multi-dimensional array from userinput and then displaying it.
 
 //        int rows = 3;
 //        int cols = 7;
@@ -351,7 +351,7 @@ public class test {
 //            System.out.print(index + " ");
 //        }
 
-}
+//    }
 
 //    static String[] createStringArray() {
 //        Scanner sc = new Scanner(System.in);
@@ -368,42 +368,54 @@ public class test {
 //        for (int i=0; i<arr.length ; i++){
 //            System.out.print(arr[i] + ", ");
 //        }
-//   }
-//}
 
-class forex {
 
-    String fromCurrency;
-    String toCurrency;
-    double exchangeRate;
-
-    forex(){
-        fromCurrency = "USD";
-        toCurrency  = "PKR";
-        exchangeRate = 278.89;
+        //      Exception Handling
+            sum(10,25);
+    }
+    static void sum ( int a, int b){
+        try {
+            int sum = a + b;
+            System.out.println(sum);
+        } catch (ArithmeticException e) {
+            System.out.println(e.getMessage());
+        }
     }
 
-    static double convertToTarget( double amount){
-        System.out.println("From USD to PKR:");
-        double exchangeRate = 278.89;
-        amount *= exchangeRate;
-        System.out.println(amount);
-        return amount;
-    }
-
-    static double convertToBase( double amount){
-        System.out.println("From PKR to USD:");
-        double exchangeRate = 0.0036;
-        amount *= exchangeRate;
-        System.out.println(amount);
-        return amount;
-    }
-
-    public static void main(String[] args) {
-        forex newObj = new forex();
-        System.out.println(newObj.fromCurrency);
-        convertToTarget(45);
-        convertToBase(50000);
-        newObj.convertToBase(50000);
-    }
 }
+//class forex {
+//
+//    String fromCurrency;
+//    String toCurrency;
+//    double exchangeRate;
+//
+//    forex(){
+//        fromCurrency = "USD";
+//        toCurrency  = "PKR";
+//        exchangeRate = 278.89;
+//    }
+//
+//    static double convertToTarget( double amount){
+//        System.out.println("From USD to PKR:");
+//        double exchangeRate = 278.89;
+//        amount *= exchangeRate;
+//        System.out.println(amount);
+//        return amount;
+//    }
+//
+//    static double convertToBase( double amount){
+//        System.out.println("From PKR to USD:");
+//        double exchangeRate = 0.0036;
+//        amount *= exchangeRate;
+//        System.out.println(amount);
+//        return amount;
+//    }
+//
+//    public static void main(String[] args) {
+//        forex newObj = new forex();
+//        System.out.println(newObj.fromCurrency);
+//        convertToTarget(45);
+//        convertToBase(50000);
+//        newObj.convertToBase(50000);
+//    }
+//}
