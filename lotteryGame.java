@@ -1,7 +1,7 @@
 import java.awt.*;
 import java.util.Random;
 import java.util.Scanner;
-
+    
 public class lotteryGame {
     public static void main(String[] args) {
        String randomticket = generateRandom();
