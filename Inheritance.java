@@ -1,5 +1,4 @@
 public class Inheritance {
-
 }
 
 class Film {
@@ -37,10 +36,7 @@ class Film {
         dvdobj.printstate();
         videoobj.calculatePrice(2, 10.0);
         dvdobj.calculatePrice(10  );
-
     }
-
-
 }
 
 class Dvd extends Film {
@@ -63,7 +59,6 @@ class Dvd extends Film {
         DVDPrice = DVDPrice - deposit;
         return DVDPrice;
     }
-
 }
 
 class Video extends Film {
